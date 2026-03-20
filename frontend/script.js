@@ -1,4 +1,4 @@
-fetch('http://127.0.0.1:8000/api/stats')
+fetch('https://dashboard-backend-kvc0.onrender.com/api/stats')
 .then(res => res.json())
 .then(data => {
 
