@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analytics Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <aside class="sidebar">
+                <h2>Dashboard</h2>
+                <p>Analytics</p>
+                <p>Reports</p>
+            </aside>
+
+            <main class="main">
+                <h1>Analytics Dashboard Overview</h1>
+
+                <div class="cards">
+                    <div class="card">Users <span id="users"></span></div>
+                    <div class="card">Active <span id="active"></span></div>
+                    <div class="card">Completed <span id="completed_tasks"></span></div>
+                    <div class="card">Efficiency <span id="efficiency"></span></div>
+                </div>
+
+                <div class="charts">
+                    <div class="chart-card">
+                        <h3>Task Distribution</h3>
+                        <canvas id="tasksChart"></canvas>
+                    </div>
+
+                    <div class="chart-card">
+                        <h3>User Growth</h3>
+                        <canvas id="usersChart"></canvas>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
